@@ -1,7 +1,5 @@
 # Docateste
 
-- [x] Construir app para gerenciar
-
 ##### Na raiz do projeto execute:
 
 `yarn build` para construir as imagens.
