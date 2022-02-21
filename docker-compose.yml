@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  api-server:
+    image: api-server
+    ports:
+      - "3000:3000"
+    networks:
+      - docateste-app
+
+  app-client:
+    image: app-client
+    stdin_open: true
+    ports:
+      - "4002:4002"
+    networks:
+      - docateste-app
+
+networks:
+  docateste-app:
+    driver: bridge

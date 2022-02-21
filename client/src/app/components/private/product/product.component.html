@@ -1,0 +1,20 @@
+<po-widget>
+  <div class="po-font-text-large">PRODUTOS</div>
+  <po-divider></po-divider>
+  <po-widget
+    [p-height]="200"
+    *ngFor="let product of products"
+    class="po-md-12 po-lg-6"
+  >
+    <a href="{{ product.link }}" target="_blank" class="po-font-text">
+      {{ product.name }}
+    </a>
+    <po-divider></po-divider>
+    <li
+      *ngFor="let description of product.description"
+      class="po-font-text-small po-text-left"
+    >
+      {{ description }}
+    </li>
+  </po-widget>
+</po-widget>

@@ -1,0 +1,11 @@
+{
+   "name": "docateste",
+   "version": "1.0.0",
+   "scripts": {
+      "build": "make build",
+      "start": "make run",
+      "stop": "make stop"
+   },
+   "keywords": [],
+   "author": "https://github.com/juniorlfn"
+}

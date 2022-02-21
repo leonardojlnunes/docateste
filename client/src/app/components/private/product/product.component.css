@@ -1,0 +1,18 @@
+a {
+  color: #00000088;
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #000000;
+}
+
+a:visited {
+  color: #00000022;
+}

@@ -1,0 +1,16 @@
+<div class="po-wrapper">
+  <po-menu
+    class="teste"
+    [p-short-logo]="shortLogo"
+    [p-collapsed]="true"
+    [p-filter]="true"
+    [p-menus]="menus"
+    [p-logo]="logo"
+  >
+  </po-menu>
+  <po-toolbar [p-profile]="profile" [p-profile-actions]="profileActions">
+  </po-toolbar>
+  <po-page-default>
+    <router-outlet></router-outlet>
+  </po-page-default>
+</div>

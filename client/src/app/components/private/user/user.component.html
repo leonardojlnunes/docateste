@@ -1,0 +1,45 @@
+<po-widget>
+  <div class="po-sm-12">
+    <div class="po-font-text-large po-sm-10">USUÁRIOS</div>
+    <po-button
+      class="po-sm-2"
+      p-label="Adicionar usuário"
+      (p-click)="this.newUser()"
+    >
+    </po-button>
+  </div>
+  <div class="po-sm-12">
+    <po-divider></po-divider>
+    <po-table
+      [p-hide-text-overflow]="true"
+      [p-sort]="true"
+      [p-striped]="true"
+      [p-columns]="columns"
+      [p-items]="users"
+    >
+    </po-table>
+  </div>
+  <po-modal p-title="Usuário" #modal>
+    <po-dynamic-form
+      #dynamicForm
+      [p-value]="user"
+      [p-fields]="fields"
+    ></po-dynamic-form>
+    <po-modal-footer [p-disabled-align]="false">
+      <po-button
+        p-type="danger"
+        p-label="Fechar"
+        (p-click)="this.modal.close()"
+      >
+      </po-button>
+      <po-button
+        p-type="primary"
+        p-label="Salvar"
+        (p-click)="saveUser()"
+        [p-loading]="this.loadingForm"
+        [p-disabled]="dynamicForm?.form?.invalid ? true : false"
+      >
+      </po-button>
+    </po-modal-footer>
+  </po-modal>
+</po-widget>
