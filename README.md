@@ -13,6 +13,7 @@ usuário: leonaldofnunes@gmail.com
 senha: Jujuba$#@!10
 
 <br>
+
 `yarn stop` para parar os serviços.
 
 ##### Desafios:
