@@ -6,7 +6,12 @@
 
 `yarn start` para iniciar os serviços.
 
-Acessar: [localhost:5000](http://localhost:5000/)
+Acessar: [localhost:4002](http://localhost:4002/) 
+
+usuário: leonaldofnunes@gmail.com 
+
+senha: Jujuba$#@!10
+
 <br>
 `yarn stop` para parar os serviços.
 
