@@ -2,4 +2,4 @@ build:
 	docker build -t app-client .
 
 run:
-	docker run -i -d -p 4002:4002 app-client
+	docker run -i -d -p 8080:80 app-client

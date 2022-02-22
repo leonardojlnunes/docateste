@@ -6,11 +6,11 @@
 
 `yarn start` para iniciar os serviços.
 
-Acessar: [localhost:4002](http://localhost:4002/) 
+Acessar: [localhost:4002](http://localhost:8080/) 
 
 usuário: leonaldofnunes@gmail.com 
 
-senha: Jujuba$#@!10
+senha: 321654
 
 <br>
 

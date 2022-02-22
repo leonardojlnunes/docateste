@@ -1,14 +1,21 @@
-FROM node:14-slim
+FROM node:alpine AS builder
 
 WORKDIR /usr/src/app
 
 COPY ./package.json ./
 COPY ./yarn.lock ./
 
-RUN yarn install
-
 COPY . .
 
-EXPOSE 4002
+RUN yarn && yarn build
 
-CMD [ "yarn", "start" ]
+RUN rm -rf node_modules
+RUN yarn cache clean
+
+RUN yarn install --production
+
+FROM nginx:alpine
+
+COPY --from=builder /usr/src/app/dist/docateste /usr/share/nginx/html
+
+EXPOSE 80
