@@ -6,7 +6,7 @@
 
 `yarn start` para iniciar os serviços.
 
-Acessar: [localhost:4002](http://localhost:8080/) 
+Acessar: [localhost:8080](http://localhost:8080/) 
 
 usuário: leonaldofnunes@gmail.com 
 
